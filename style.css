@@ -1,0 +1,198 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #e9eaff, #f5eaff, #e7f4ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 460px;
+}
+
+/* Password Card */
+.password-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(60, 50, 120, 0.12);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 25px;
+    color: #252344;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #77768b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Password Output */
+.password-output {
+    margin-bottom: 25px;
+}
+
+.password-output label,
+.length-setting label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #33324f;
+    margin-bottom: 10px;
+}
+
+.password-field {
+    display: flex;
+    gap: 10px;
+}
+
+.password-field input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #deddef;
+    border-radius: 9px;
+    background: #f8f8fc;
+    font-size: 14px;
+    outline: none;
+}
+
+.password-field input:focus {
+    border-color: #7765dc;
+}
+
+.password-field button {
+    padding: 0 17px;
+    border: none;
+    border-radius: 9px;
+    background: #eeeaff;
+    color: #6551c8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Settings */
+.settings {
+    margin-bottom: 25px;
+}
+
+.length-setting {
+    margin-bottom: 25px;
+}
+
+.length-setting input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #deddef;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+}
+
+.length-setting input:focus {
+    border-color: #7765dc;
+}
+
+/* Character Options */
+.character-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.character-options h3 {
+    font-size: 15px;
+    color: #33324f;
+    margin-bottom: 2px;
+}
+
+.character-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #626176;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.character-options input {
+    width: 16px;
+    height: 16px;
+    accent-color: #7765dc;
+    cursor: pointer;
+}
+
+/* Generate Button */
+#generate-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #7765dc, #9872e8);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(119, 101, 220, 0.25);
+}
+
+#message {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+    color: #6551c8;
+    min-height: 18px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .password-card {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .password-field {
+        gap: 7px;
+    }
+
+    .password-field button {
+        padding: 0 12px;
+    }
+}
