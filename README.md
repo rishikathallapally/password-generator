@@ -1,5 +1,7 @@
 # Password Generator 🔐
 
+## Live Demo [View Password Generator](https://rishikathallapally.github.io/password-generator/)
+
 A beginner-friendly Password Generator built using HTML, CSS, and JavaScript.
 
 ## Features
